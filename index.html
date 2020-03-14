@@ -6,5 +6,267 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="main-header">
+      <nav class="main-menu">
+        <a class="main-menu__logo logo">
+          <img src="#" width="100" height="80" alt="Логотип компании, специализирующейся на производстве и монтаже печатных плат" />
+          <div class="logo__title">
+            Smart Device
+          </div>
+          <div class="logo__subtitle">
+            умные технологии
+          </div>
+        </a>
+        <ul class="main-menu__contacts contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@sd.ru">
+              info@sd.ru
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+7 (495) 000 52 52 ">
+              +7 (495) 000 52 52
+            </a>
+          </li>
+          <li class="contacts__item">
+            <button class="button">
+              Заказать звонок
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main class="container">
+        <section class="banner">
+          <h1 class="banner__title">
+            Печатные платы
+          </h1>
+          <p class="banner__subtitle">
+            - производство и монтаж, поставка комплектующих, блоков и модулей
+          </p>
+          <button class="banner__button">
+            Получить бесплатную консультацию
+          </button>
+          <img alt="Изображение механических плат" src="" width="705" height="515" />
+        </section>
+        <section class="features">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <img class="features__icon" src="#" />
+              <h3 class="features__title">
+                Оперативные сроки
+              </h3>
+              <p class="features__subtitle">
+                Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.
+              </p>
+            </li>
+            <li class="features__item">
+              <img class="features__icon" src="#" />
+              <h3 class="features__title">
+                Крупные поставщики
+              </h3>
+              <p class="features__subtitle">
+                Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+              </p>
+            </li>
+            <li class="features__item">
+              <img class="features__icon" src="#" />
+              <h3 class="features__title">
+                Полная конфиденциальность
+              </h3>
+              <p class="features__subtitle">
+                По желанию клиента мы обеспечиваем полную конфеденциальность.
+              </p>
+            </li>
+            <li class="features__item">
+              <img class="features__icon" src="#" />
+              <h3 class="features__title">
+                Персонализация стоимости
+              </h3>
+              <p class="features__subtitle">
+                Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <h2 class="about__title">
+            О компании
+          </h2>
+          <p class="about__subtitle">
+            Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней. Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+          </p>
+          <a class="about__button" href="#">
+            Подробнее
+          </a>
+        </section>
+        <section class="services">
+          <h2 class="services__title">
+            Service Device предлагает следующие товары и услуги
+          </h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <h3 class="services__subtitle">
+                  Производство печатных плат
+                </h3>
+                <span class="services__more">
+                  <img class="icon__more" />
+                </span>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <h3 class="services__subtitle">
+                  Монтаж печатных плат
+                </h3>
+                <span class="services__more">
+                  <img class="icon__more" />
+                </span>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <h3 class="services__subtitle">
+                  Комплектующие для светотехники
+                </h3>
+                <span class="services__more">
+                  <img class="icon__more" />
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="question">
+          <h2 class="visually-hidden">Форма для связи</h2>
+          <form class="question__form" method="post" action="#">
+            <h3 class="question__title">
+              Остались вопросы? Задайте их нам!
+            </h3>
+            <p class="question__subtitle">
+              Мы проконсультируем Вас бесплатно
+            </p>
+            <div class="question__form-group">
+              <input class="question__field" type="text" placeholder="Имя" />
+              <input class="question__field" type="text" placeholder="Телефон" />
+            </div>
+            <textarea class="question__textarea" placeholder="Ваш вопрос" rows="3"></textarea>
+            <input class="question__button" type="submit" value="Задать вопрос" />
+            <p class="question__consent">
+              <input type="checkbox" checked />
+              Я согласен на обработку персональных данных
+            </p>
+          </form>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__content">
+          <a class="main-footer__logo logo">
+            <img src="#" width="100" height="80" alt="Логотип компании, специализирующейся на производстве и монтаже печатных плат" />
+            <div class="logo__title">
+              Smart Device
+            </div>
+            <div class="logo__subtitle">
+              умные технологии
+            </div>
+          </a>
+          <div class="main-footer__social social-media">
+            <ul class="social-media__list">
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">
+                  facebook
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">
+                  ok
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a class="social-media__link" href="#">
+                  vk
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__sections footer-menu">
+            <h3 class="footer-menu__title">
+              Разделы сайта
+            </h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="about.html">
+                  О компании
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="products.html">
+                  Продукты
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="production.html">
+                  Производство печатных плат
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="montage.html">
+                  Монтаж печатных плат
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="parts.html">
+                  Комплектующие
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="delivery.html">
+                  Доставка
+                </a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__link" href="contacts.html">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__contacts footer-menu">
+            <h3 class="footer-menu__title">
+              Наш офис
+            </h3>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                г. Мытищи, Олимпийский проспект, д.10
+              </li>
+              <li class="footer-menu__item">
+                +7 (495) 589-40-50
+              </li>
+              <li class="footer-menu__item">
+                +7 (925) 003-87-67
+              </li>
+              <li class="footer-menu__item">
+                +7 (926) 926-080-79
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-footer__bottom">
+          <a class="main-footer__copyright" href="#">
+            Все права защищены
+          </a>
+          <a class="main-footer__company" href="#">
+            1999-2018 SD Service Devices
+          </a>
+          <a class="main-footer__agreement" href="#">
+            Условия конфиденциальности
+          </a>
+          <span class="main-footer__developer">
+            Developed by wow studio
+          </span>
+        </div>
+      </footer>
+    </header>
+  </body>
 </html>
