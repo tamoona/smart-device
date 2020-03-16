@@ -1,0 +1,26 @@
+.services {
+  background: #1b2d37;
+}
+
+.services__list {
+  list-style: none;
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.services__title {
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.services__subtitle {
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}

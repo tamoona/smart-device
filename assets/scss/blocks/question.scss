@@ -1,0 +1,41 @@
+.question {
+  background: #00b2ff;
+  color: #ffffff;
+  background-image: url("../img/form-background.png");
+}
+
+.question__title {
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.question__subtitle {
+  font-weight: normal;
+}
+
+.question__field,
+.question__textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #ffffff;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.question__button {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #00b2ff;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.question__consent {
+  color: #ffffff;
+  opacity: 0.8;
+}
