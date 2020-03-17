@@ -6,15 +6,36 @@
 }
 
 .about {
+  max-width: 1166px;
+  margin: 0 auto;
   background-image: url("../img/2005@1x.png");
   background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-x: -14px;
+  padding-bottom: 96px;
+  padding-left: 99px;
+  padding-right: 4px;
+}
+
+.about__subtitle {
+  padding-bottom: 39px;
+}
+
+.about__text {
+  margin-left: 81px;
 }
 
 .about__button {
   font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #00b2ff;
   border: 1px solid #00b2ff;
   box-sizing: border-box;
   border-radius: 5px;
+  padding: 14px 52px;
 }

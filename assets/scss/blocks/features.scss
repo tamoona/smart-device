@@ -1,13 +1,21 @@
 .features__list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .features__item {
-  text-align: center;
+  width: 50%;
+  text-align: start;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  display: flex;
 
   &--active {
-    background: #00b2ff;
-
+    .features__content {
+      background: #00b2ff;
+    }
     .features__title,
     .features__subtitle {
       color: #ffffff;
@@ -15,14 +23,30 @@
   }
 }
 
+.features__content {
+  padding: 40px 50px 49px 45px;
+  border: 1px solid #ebebeb;
+}
+
 .features__title {
   font-family: "Roboto Condensed";
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
+  margin: 0;
+  padding-top: 17px;
 }
 
 .features__subtitle {
   font-size: 16px;
   line-height: 22px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.features {
+  margin: 0 auto;
+  max-width: 1166px;
+  padding-top: 115px;
+  padding-bottom: 52px;
 }
