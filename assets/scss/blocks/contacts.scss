@@ -1,4 +1,6 @@
 .contacts__item {
+  // width: 50%;
+
   button {
     border: 1px solid #ffffff;
     box-sizing: border-box;
@@ -11,5 +13,6 @@
     text-transform: uppercase;
     background-color: inherit;
     color: #ffffff;
+    padding: 17px 34px;
   }
 }

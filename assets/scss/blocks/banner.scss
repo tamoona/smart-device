@@ -7,6 +7,28 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.banner {
+  display: flex;
+  max-width: 1495px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.banner__wrapper-content {
+  width: 50%;
+}
+
+.banner__wrapper-image {
+  width: 50%;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 .banner__subtitle {
@@ -16,6 +38,9 @@
   font-size: 22px;
   line-height: 34px;
   color: #ffffff;
+  margin: 0;
+  padding-bottom: 45px;
+  padding-left: 78px;
 }
 
 .banner__button {
@@ -25,4 +50,7 @@
   color: #ffffff;
   background: #00b2ff;
   border-radius: 5px;
+  width: 407px;
+  padding: 17px 0 17px 0;
+  margin-left: 78px;
 }
