@@ -1,4 +1,6 @@
 .question {
+  display: flex;
+  justify-content: flex-end;
   background: #00b2ff;
   color: #ffffff;
   background-image: url("../img/form-background.png");
@@ -9,6 +11,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
+  margin: 0;
 }
 
 .question__subtitle {
@@ -35,7 +38,14 @@
   color: #ffffff;
 }
 
+.question__form {
+  width: 672px;
+  padding-top: 104px;
+  padding-bottom: 114px;
+}
+
 .question__consent {
   color: #ffffff;
   opacity: 0.8;
+  margin: 0;
 }
