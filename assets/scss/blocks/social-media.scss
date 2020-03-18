@@ -1,3 +1,15 @@
 .social-media__list {
   list-style: none;
 }
+
+.social-media__list {
+  display: flex;
+  margin-top: 54px;
+}
+
+.social-media__item {
+  margin-right: 16px;
+  &:last-child {
+    margin-right: 0;
+  }
+}

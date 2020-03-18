@@ -5,10 +5,20 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #1b2d37;
+  margin: 0;
+  padding: 4px 0 29px 0;
 }
 
 .footer-menu__list {
   list-style: none;
+
+  &--column {
+    display: flex;
+  }
+}
+
+.footer-menu__column {
+  margin-right: 65px;
 }
 
 .footer-menu__item,

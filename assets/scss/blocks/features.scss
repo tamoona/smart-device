@@ -5,12 +5,12 @@
 }
 
 .features__item {
+  display: flex;
   width: 50%;
   text-align: start;
   padding: 0 15px;
   margin-bottom: 30px;
   background-color: #ffffff;
-  display: flex;
 
   &--active {
     .features__content {
