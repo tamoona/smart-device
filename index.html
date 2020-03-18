@@ -62,8 +62,8 @@
         </div>
       </section>
     </header>
-    <main class="container">
-      <section class="company">
+    <main>
+      <section class="company container">
         <section class="features">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features__list">
@@ -156,7 +156,7 @@
         </section>
       </section>
       <section class="services">
-        <div class="services__wrapper">
+        <div class="services__container container">
           <h2 class="services__title">
             Service Device предлагает следующие товары и услуги
           </h2>
@@ -201,25 +201,31 @@
         </div>
       </section>
       <section class="question">
-        <h2 class="visually-hidden">Форма для связи</h2>
-        <form class="question__form" method="post" action="#">
-          <h3 class="question__title">
-            Остались вопросы? Задайте их нам!
-          </h3>
-          <p class="question__subtitle">
-            Мы проконсультируем Вас бесплатно
-          </p>
-          <div class="question__form-group">
-            <input class="question__field" type="text" placeholder="Имя" />
-            <input class="question__field" type="text" placeholder="Телефон" />
-          </div>
-          <textarea class="question__textarea" placeholder="Ваш вопрос" rows="3"></textarea>
-          <input class="question__button" type="submit" value="Задать вопрос" />
-          <p class="question__consent">
-            <input type="checkbox" checked />
-            Я согласен на обработку персональных данных
-          </p>
-        </form>
+        <div class="question__container container">
+          <h2 class="visually-hidden">Форма для связи</h2>
+          <form class="question__form" method="post" action="#">
+            <h3 class="question__title">
+              Остались вопросы? Задайте их нам!
+            </h3>
+            <p class="question__subtitle">
+              Мы проконсультируем Вас бесплатно
+            </p>
+            <div class="question__form-group">
+              <input class="question__field" type="text" placeholder="Имя" />
+              <input class="question__field" type="text" placeholder="Телефон" />
+            </div>
+            <div class="question__form-group">
+              <textarea class="question__textarea" placeholder="Ваш вопрос" rows="8"></textarea>
+            </div>
+            <div class="question__form-group">
+              <input class="question__button" type="submit" value="Задать вопрос" />
+              <p class="question__consent">
+                <input type="checkbox" checked />
+                Я согласен на обработку персональных данных
+              </p>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
