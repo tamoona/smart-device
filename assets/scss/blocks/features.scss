@@ -12,7 +12,7 @@
   margin-bottom: 30px;
   background-color: #ffffff;
 
-  &--active {
+  &:hover {
     .features__content {
       background: #00b2ff;
     }
@@ -20,12 +20,21 @@
     .features__subtitle {
       color: #ffffff;
     }
+
+    path {
+      fill: #ffffff;
+    }
   }
 }
 
 .features__content {
   padding: 40px 50px 49px 45px;
   border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
+
+  path {
+    fill: #00b2ff;
+  }
 }
 
 .features__title {
@@ -47,4 +56,30 @@
 .features {
   padding-top: 115px;
   padding-bottom: 52px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .features {
+    padding-top: 54px;
+    padding-bottom: 0;
+  }
+
+  .features__item {
+    &--active {
+      path {
+        fill: #00b2ff;
+      }
+    }
+    .features__content {
+      background-color: #ffffff;
+    }
+
+    .features__title {
+      color: #00b2ff;
+    }
+
+    .features__subtitle {
+      color: #666666;
+    }
+  }
 }

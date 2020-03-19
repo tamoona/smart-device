@@ -21,3 +21,14 @@
     color: #ffffff;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .main-menu {
+    max-width: 720px;
+    padding-top: 20px;
+  }
+
+  .main-menu__contacts {
+    width: 16%;
+  }
+}

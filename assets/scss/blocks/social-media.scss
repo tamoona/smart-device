@@ -13,3 +13,9 @@
     margin-right: 0;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .social-media__list {
+    margin-top: 10px;
+  }
+}

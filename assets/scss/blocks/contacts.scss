@@ -16,3 +16,21 @@
     padding: 17px 34px;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .contacts__item {
+    padding-left: 25px;
+    span {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+
+    svg {
+      height: 24px;
+      width: 27px;
+    }
+  }
+}

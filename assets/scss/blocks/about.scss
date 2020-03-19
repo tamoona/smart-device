@@ -11,16 +11,12 @@
   background-size: 20%;
   background-position-x: -14px;
   padding-bottom: 96px;
-  padding-left: 99px;
+  padding-left: 205px;
   padding-right: 4px;
 }
 
-.about__subtitle {
-  padding-bottom: 39px;
-}
-
-.about__text {
-  margin-left: 81px;
+.about__content {
+  margin-bottom: 39px;
 }
 
 .about__button {
@@ -36,4 +32,24 @@
   box-sizing: border-box;
   border-radius: 5px;
   padding: 14px 52px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .about {
+    background-size: 34%;
+    padding-right: 30px;
+  }
+
+  .about__content {
+    height: 212px;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: "...";
+      position: absolute;
+      right: -7px;
+      bottom: 4px;
+    }
+  }
 }

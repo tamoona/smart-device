@@ -1,3 +1,5 @@
+$bannerContentOffset: 145px;
+
 .banner__title {
   font-family: "Roboto Condensed";
   font-style: normal;
@@ -16,6 +18,7 @@
   max-width: 1495px;
   margin: 0 auto;
   padding-bottom: 100px;
+  position: relative;
 }
 
 .banner__wrapper-content {
@@ -23,7 +26,10 @@
 }
 
 .banner__wrapper-image {
-  width: 50%;
+  max-width: 707px;
+  position: absolute;
+  right: 0;
+  top: 0;
 
   img {
     width: 100%;
@@ -39,8 +45,19 @@
   line-height: 34px;
   color: #ffffff;
   margin: 0;
-  padding-bottom: 45px;
-  padding-left: 78px;
+  margin-bottom: 45px;
+  margin-left: $bannerContentOffset;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 33px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: -54px;
+    top: 17px;
+  }
 }
 
 .banner__button {
@@ -52,5 +69,25 @@
   border-radius: 5px;
   width: 407px;
   padding: 17px 0 17px 0;
-  margin-left: 78px;
+  margin-left: $bannerContentOffset;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .banner__title {
+    padding-left: 88px;
+  }
+
+  .banner {
+    max-width: 100%;
+  }
+
+  .banner__wrapper-content {
+    width: 70%;
+  }
+
+  .banner__wrapper-image {
+    max-width: 465px;
+    right: -233px;
+    top: -158px;
+  }
 }

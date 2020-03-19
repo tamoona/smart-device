@@ -1,3 +1,5 @@
+$footerMaxWidth: 1415px;
+
 .main-footer__logo {
   color: #203c42;
 }
@@ -12,20 +14,25 @@
 }
 
 .main-footer__bottom {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
   border-top: 1px solid rgba(27, 45, 55, 0.09);
+}
+
+.main-footer__bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 14px 0 14px 0;
+  max-width: $footerMaxWidth;
 }
 
 .main-footer__content {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-top: 65px;
   padding-bottom: 55px;
   margin: 0 auto;
-  max-width: 1415px;
+  max-width: $footerMaxWidth;
 }
 
 .main-footer__column {
@@ -33,24 +40,81 @@
   flex-direction: column;
   width: 25%;
   &--left {
-    width: 425px;
+    width: 30.03%;
   }
   &--middle {
     flex: 1;
   }
   &--right {
-    width: 363px;
+    width: 25.65%;
   }
 }
 
 .main-footer__copyright {
-  padding-right: 59px;
+  width: 15.7%;
 }
 
 .main-footer__company {
-  padding-right: 142px;
+  width: 25.58%;
+
+  &--top {
+    display: none;
+  }
 }
 
 .main-footer__agreement {
-  padding-right: 404px;
+  flex: 1;
+}
+
+.main-footer__developer {
+  width: 14.3%;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .main-footer__column {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 50%;
+
+    &--left {
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: row;
+      padding-bottom: 26px;
+      margin-bottom: 38px;
+      border-bottom: 1px solid rgba(27, 45, 55, 0.09);
+
+      .main-footer__company {
+        display: block;
+        color: rgba(27, 45, 55, 0.5);
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        width: 32.58%;
+        padding-top: 15px;
+      }
+    }
+  }
+
+  .main-footer__content {
+    padding-top: 19px;
+    padding-bottom: 39px;
+    flex-wrap: wrap;
+  }
+
+  .main-footer__copyright,
+  .main-footer__company {
+    display: none;
+  }
+
+  .main-footer__developer {
+    width: 27.3%;
+    text-align: right;
+  }
+
+  .main-footer__bottom-wrapper {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
 }

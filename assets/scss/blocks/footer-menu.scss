@@ -25,3 +25,13 @@
 .footer-menu__link {
   color: rgba(27, 45, 55, 0.5);
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .footer-menu__list {
+    font-size: 15px;
+    line-height: 25px;
+    &--column {
+      display: block;
+    }
+  }
+}

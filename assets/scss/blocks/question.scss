@@ -3,7 +3,7 @@
   color: #ffffff;
   background-image: url("../img/paper-airplane@1x.png"), url("../img/form-background@1x.png");
   background-repeat: no-repeat;
-  background-position: 11% 12%;
+  background-position: 11% 12%, 100%;
 }
 
 .question__container {
@@ -80,4 +80,25 @@
   opacity: 0.8;
   margin: 0;
   width: 50%;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .question {
+    background-image: none;
+  }
+
+  .question__container {
+    justify-content: center;
+  }
+
+  .question__form {
+    max-width: 589px;
+    padding-top: 83px;
+    padding-bottom: 103px;
+  }
+
+  .question__title {
+    font-size: 32px;
+    line-height: 140.62%;
+  }
 }
