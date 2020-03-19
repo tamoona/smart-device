@@ -28,7 +28,10 @@
 .question__form-group {
   display: flex;
   justify-content: space-between;
-  margin-top: 42px;
+  margin-bottom: 42px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .question__field {
@@ -48,6 +51,10 @@
 
 .question__field,
 .question__textarea {
+  font-family: "PT Mono";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
   background: rgba(255, 255, 255, 0.1);
   border: none;
   color: #ffffff;
@@ -100,5 +107,58 @@
   .question__title {
     font-size: 32px;
     line-height: 140.62%;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .question {
+    background-image: none;
+  }
+
+  .question__title {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .question__form {
+    max-width: 290px;
+    padding-top: 67px;
+    padding-bottom: 40px;
+  }
+
+  .question__form-group {
+    display: block;
+  }
+
+  .question__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .question__field {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .question__button {
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .question__textarea {
+    height: 104px;
+  }
+
+  .question__consent {
+    width: 100%;
   }
 }

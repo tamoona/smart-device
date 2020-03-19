@@ -53,3 +53,32 @@
     }
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .about {
+    background-image: none;
+    padding: 0 0 69px 0;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .about__text {
+    margin-bottom: 50px;
+  }
+
+  .about__content {
+    height: 377px;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: "...";
+      position: absolute;
+      right: 60px;
+      bottom: 3px;
+    }
+  }
+}

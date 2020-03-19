@@ -109,3 +109,22 @@
     padding: 53px 38px 0 44px;
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .services {
+    padding-top: 53px;
+    padding-bottom: 64px;
+  }
+
+  .services__item {
+    width: 100%;
+    height: 256px;
+    margin-bottom: 30px;
+    background-position: 0% 30%;
+  }
+
+  .services__title {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+}

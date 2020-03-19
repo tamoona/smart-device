@@ -34,3 +34,20 @@
     }
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .contacts__item {
+    span {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+
+    svg {
+      width: 25.33px;
+      height: 18.67px;
+    }
+  }
+}

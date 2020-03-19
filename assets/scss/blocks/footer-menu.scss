@@ -11,14 +11,14 @@
 
 .footer-menu__list {
   list-style: none;
-
-  &--column {
-    display: flex;
+  margin-right: 65px;
+  &:last-child {
+    margin-right: 0;
   }
 }
 
-.footer-menu__column {
-  margin-right: 65px;
+.footer-menu__wrapper {
+  display: flex;
 }
 
 .footer-menu__item,
@@ -30,8 +30,22 @@
   .footer-menu__list {
     font-size: 15px;
     line-height: 25px;
-    &--column {
-      display: block;
-    }
+  }
+
+  .footer-menu__wrapper {
+    display: block;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .footer-menu__wrapper {
+    display: block;
+    margin-right: 0;
+  }
+
+  .footer-menu__list {
+    font-size: 15px;
+    line-height: 25px;
   }
 }

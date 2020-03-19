@@ -32,3 +32,17 @@
     width: 16%;
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .main-menu {
+    padding-top: 17px;
+  }
+
+  .main-menu__contacts {
+    width: 27%;
+  }
+
+  .main-menu__logo {
+    padding-left: 17px;
+  }
+}

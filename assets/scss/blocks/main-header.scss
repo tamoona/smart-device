@@ -13,3 +13,9 @@
     min-height: 686px;
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .main-header {
+    min-height: auto;
+  }
+}

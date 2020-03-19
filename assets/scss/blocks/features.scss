@@ -83,3 +83,30 @@
     }
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .features {
+    padding-top: 37px;
+    padding-bottom: 11px;
+  }
+
+  .features__list {
+    display: block;
+    max-width: 100%;
+  }
+
+  .features__item {
+    width: 100%;
+    padding: 0;
+  }
+
+  .features__content {
+    padding: 22px 17px 20px 14px;
+  }
+
+  .features__title {
+    font-size: 20px;
+    line-height: 140.62%;
+    color: #00b2ff;
+  }
+}

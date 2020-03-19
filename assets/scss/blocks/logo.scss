@@ -21,3 +21,12 @@
   margin-left: 16px;
   padding-top: 6px;
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .logo {
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}

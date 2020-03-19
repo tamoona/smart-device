@@ -2,3 +2,9 @@
   margin: 0 auto;
   max-width: 1170px;
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .container {
+    max-width: 290px;
+  }
+}
