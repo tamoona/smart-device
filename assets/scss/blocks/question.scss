@@ -89,6 +89,38 @@
   width: 50%;
 }
 
+.question__checkbox-label {
+  display: block;
+  padding-left: 32px;
+  position: relative;
+}
+
+.question__checkbox-input {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .question__checkbox {
+    background-image: url("../img/checkbox-on.svg");
+  }
+
+  &:focus + .question__checkbox {
+    background-image: url("../img/checkbox-off.svg");
+  }
+
+  &:checked:focus + .question__checkbox {
+    background-image: url("../img/checkbox-on.svg");
+  }
+}
+
+.question__checkbox {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/checkbox-off.svg");
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .question {
     background-image: none;

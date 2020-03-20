@@ -29,4 +29,12 @@
       height: 38px;
     }
   }
+
+  .logo__slogan {
+    display: none;
+
+    &--bottom {
+      display: block;
+    }
+  }
 }

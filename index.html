@@ -70,6 +70,8 @@
         </div>
         <div class="banner__wrapper-image">
           <picture>
+            <source srcset="./assets/img/banner-image-tablet@2x.png" media="(min-width: 768px) and (max-width: 1023px)" />
+            <source srcset="./assets/img/banner-image-tablet@1x.png" media="(min-width: 768px) and (max-width: 1023px)" />
             <source srcset="./assets/img/banner-image-mobile@1x.png" media="(min-width: 320px)and (max-width: 767px)" />
             <source srcset="./assets/img/banner-image-mobile@2x.png" media="(min-width: 320px)and (max-width: 767px)" />
             <img alt="Изображение механических плат" src="./assets/img/banner-image@1x.png" width="707" height="519" />
@@ -234,8 +236,11 @@
             <div class="question__form-group">
               <input class="question__button" type="submit" value="Задать вопрос" />
               <p class="question__consent">
-                <input type="checkbox" checked />
-                Я согласен на обработку персональных данных
+                <label class="question__checkbox-label">
+                  <input class="question__checkbox-input" type="checkbox" checked />
+                  Я согласен на обработку персональных данных
+                  <span class="question__checkbox"></span>
+                </label>
               </p>
             </div>
           </form>
@@ -247,7 +252,7 @@
         <div class="main-footer__column main-footer__column--left">
           <a class="main-footer__logo logo">
             <img src="./assets/img/logo.svg" width="52" height="52" alt="Логотип компании, специализирующейся на производстве и монтаже печатных плат" />
-            <div class="logo__slogan">
+            <div class="logo__slogan logo__slogan--bottom">
               <div class="logo__title">
                 Service Device
               </div>
