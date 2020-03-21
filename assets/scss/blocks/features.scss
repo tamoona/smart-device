@@ -70,11 +70,8 @@
   }
 
   .features__item {
-    &--active {
-      path {
-        fill: #00b2ff;
-      }
-    }
+    min-height: 232px;
+
     .features__content {
       background-color: #ffffff;
     }
@@ -86,6 +83,14 @@
     .features__subtitle {
       color: #666666;
     }
+  }
+
+  .features__content {
+    padding: 25px 18px 17px 27px;
+  }
+
+  .features__subtitle {
+    padding-top: 7px;
   }
 }
 

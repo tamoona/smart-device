@@ -3,6 +3,12 @@
   max-width: 1180px;
 }
 
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .container {
+    max-width: 721px;
+  }
+}
+
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .container {
     max-width: 290px;

@@ -81,7 +81,30 @@ $bannerContentOffset: 145px;
   .banner__title {
     font-size: 60px;
     line-height: 70px;
-    padding-left: 103px;
+    padding-left: 88px;
+  }
+
+  .banner__subtitle {
+    font-size: 18px;
+    line-height: 156.8%;
+    padding-left: 7px;
+    margin: 0 0 53px 133px;
+
+    &::before {
+      content: "";
+      width: 33px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      left: -42px;
+      top: 14px;
+    }
+  }
+
+  .banner__button {
+    width: 379px;
+    padding: 18px 0;
+    margin-left: 139px;
   }
 
   .banner {
@@ -93,9 +116,13 @@ $bannerContentOffset: 145px;
   }
 
   .banner__wrapper-image {
-    max-width: 629px;
-    right: -131px;
-    top: -257px;
+    right: -108px;
+    top: -191px;
+
+    img {
+      width: 541.8px;
+      height: 467.5px;
+    }
   }
 }
 

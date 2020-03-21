@@ -75,7 +75,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .services {
-    padding: 53px 22px 78px;
+    padding: 53px 26px 78px;
   }
 
   .services__list {
@@ -106,11 +106,12 @@
   .services__title {
     font-size: 32px;
     line-height: 140.62%;
+    padding-right: 84px;
   }
 
   .services__subtitle {
     max-width: 234px;
-    padding: 53px 38px 0 44px;
+    padding: 38px 38px 0 44px;
   }
 }
 

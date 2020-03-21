@@ -76,14 +76,14 @@ $footerMaxWidth: 1415px;
   .main-footer__column {
     padding-left: 25px;
     padding-right: 25px;
-    width: 50%;
+    width: 51%;
 
     &--left {
       width: 100%;
       justify-content: space-between;
       flex-direction: row;
       padding-bottom: 26px;
-      margin-bottom: 38px;
+      margin-bottom: 36px;
       border-bottom: 1px solid rgba(27, 45, 55, 0.09);
 
       .main-footer__company {
@@ -94,14 +94,18 @@ $footerMaxWidth: 1415px;
         line-height: 24px;
         letter-spacing: 0.04em;
         width: 32.58%;
-        padding-top: 15px;
+        padding-top: 17px;
       }
     }
   }
 
+  .main-footer__logo {
+    margin-right: 15px;
+  }
+
   .main-footer__content {
     padding-top: 19px;
-    padding-bottom: 39px;
+    padding-bottom: 36px;
     flex-wrap: wrap;
   }
 
@@ -116,8 +120,9 @@ $footerMaxWidth: 1415px;
   }
 
   .main-footer__bottom-wrapper {
-    padding-left: 27px;
-    padding-right: 27px;
+    padding-left: 13px;
+    padding-right: 21px;
+    margin-top: 7px;
   }
 }
 

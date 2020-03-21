@@ -148,12 +148,27 @@
   .question__form {
     max-width: 589px;
     padding-top: 83px;
-    padding-bottom: 103px;
+    padding-bottom: 104px;
   }
 
   .question__title {
     font-size: 32px;
     line-height: 140.62%;
+  }
+
+  .question__subtitle {
+    margin: 13px 0 52px;
+  }
+
+  .question__form-group {
+    &--submit {
+      margin-top: 53px;
+    }
+  }
+
+  .question__button {
+    margin-right: 36px;
+    padding: 12px 60px;
   }
 }
 
