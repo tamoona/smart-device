@@ -29,8 +29,8 @@ $footerMaxWidth: 1415px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 65px;
-  padding-bottom: 55px;
+  padding-top: 64px;
+  padding-bottom: 58px;
   margin: 0 auto;
   max-width: $footerMaxWidth;
 }
@@ -46,7 +46,7 @@ $footerMaxWidth: 1415px;
     flex: 1;
   }
   &--right {
-    width: 25.65%;
+    width: 23.65%;
   }
 }
 
@@ -64,10 +64,12 @@ $footerMaxWidth: 1415px;
 
 .main-footer__agreement {
   flex: 1;
+  padding-left: 14px;
 }
 
 .main-footer__developer {
   width: 14.3%;
+  padding-left: 9px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {

@@ -9,8 +9,9 @@
   width: 50%;
   text-align: start;
   padding: 0 15px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   background-color: #ffffff;
+  min-height: 299px;
 
   &:hover {
     .features__content {
@@ -25,12 +26,16 @@
       fill: #ffffff;
     }
   }
+
+  &:nth-child(2n + 1) {
+    padding-left: 0;
+  }
 }
 
 .features__content {
-  padding: 40px 50px 49px 45px;
+  padding: 42px 40px 42px 45px;
   border: 1px solid #ebebeb;
-  border-left: 3px solid #00b2ff;
+  border-left: 2px solid #00b2ff;
 
   path {
     fill: #00b2ff;
@@ -43,7 +48,7 @@
   line-height: 34px;
   font-weight: normal;
   margin: 0;
-  padding-top: 17px;
+  padding-top: 3px;
 }
 
 .features__subtitle {
@@ -55,7 +60,7 @@
 
 .features {
   padding-top: 115px;
-  padding-bottom: 52px;
+  padding-bottom: 43px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {

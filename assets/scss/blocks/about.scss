@@ -3,20 +3,21 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
+  margin-bottom: 20px;
 }
 
 .about {
   background-image: url("../img/2005@1x.png");
   background-repeat: no-repeat;
-  background-size: 20%;
-  background-position-x: -14px;
-  padding-bottom: 96px;
-  padding-left: 205px;
-  padding-right: 4px;
+  background-size: 19%;
+  background-position-x: -28px;
+  padding-bottom: 121px;
+  padding-left: 185px;
+  padding-right: 8px;
 }
 
 .about__content {
-  margin-bottom: 39px;
+  margin-bottom: 49px;
 }
 
 .about__button {
@@ -31,7 +32,11 @@
   border: 1px solid #00b2ff;
   box-sizing: border-box;
   border-radius: 5px;
-  padding: 14px 52px;
+  padding: 14px 50px;
+}
+
+.about__text {
+  margin-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {

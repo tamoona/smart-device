@@ -3,15 +3,18 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #1b2d37;
   margin: 0;
-  padding: 4px 0 29px 0;
+  padding: 1px 0 25px;
 }
 
 .footer-menu__list {
   list-style: none;
-  margin-right: 65px;
+  margin-right: 72px;
+  font-size: 15px;
+  line-height: 25px;
   &:last-child {
     margin-right: 0;
   }

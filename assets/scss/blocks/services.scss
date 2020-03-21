@@ -1,13 +1,12 @@
 .services {
   background: #1b2d37;
-  padding-top: 93px;
-  padding-bottom: 127px;
+  padding-top: 90px;
+  padding-bottom: 128px;
 }
 
 .services__list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   list-style: none;
 
   a {
@@ -22,7 +21,7 @@
   line-height: 51px;
   color: #ffffff;
   margin: 0;
-  padding-bottom: 34px;
+  padding-bottom: 49px;
 }
 
 .services__subtitle {
@@ -31,11 +30,12 @@
   font-size: 20px;
   line-height: 30px;
   margin: 0;
-  padding: 53px 169px 0 44px;
+  padding: 53px 157px 0 49px;
 }
 
 .services__item {
-  width: 31%;
+  width: 33.3%;
+  margin-right: 25px;
   height: 620px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,6 +51,10 @@
 
   &--lighting {
     background-image: url("../img/services-image3@1x.png");
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
