@@ -1,0 +1,33 @@
+.checkbox {
+  display: block;
+  padding-left: 32px;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.checkbox__input {
+  appearance: none;
+  position: absolute;
+
+  &:checked + .checkbox__icon {
+    background-image: url("../img/checkbox-on.svg");
+  }
+
+  &:focus + .checkbox__icon {
+    background-image: url("../img/checkbox-off.svg");
+  }
+
+  &:checked:focus + .checkbox__icon {
+    background-image: url("../img/checkbox-on.svg");
+  }
+}
+
+.checkbox__icon {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/checkbox-off.svg");
+}

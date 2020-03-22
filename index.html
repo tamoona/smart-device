@@ -227,19 +227,19 @@
               Мы проконсультируем Вас бесплатно
             </p>
             <div class="question__form-group">
-              <input class="question__field" type="text" placeholder="Имя" />
-              <input class="question__field" type="text" placeholder="Телефон" />
+              <input class="field question__field" type="text" placeholder="Имя" />
+              <input class="field question__field" type="text" placeholder="Телефон" />
             </div>
             <div class="question__form-group">
-              <textarea class="question__textarea" placeholder="Ваш вопрос" rows="8"></textarea>
+              <textarea class="field question__textarea" placeholder="Ваш вопрос" rows="8"></textarea>
             </div>
             <div class="question__form-group question__form-group--submit">
               <input class="question__button" type="submit" value="Задать вопрос" />
               <p class="question__consent">
-                <label class="question__checkbox-label">
-                  <input class="question__checkbox-input" type="checkbox" checked />
+                <label class="checkbox question__checkbox">
+                  <input class="checkbox__input" type="checkbox" checked />
                   Я согласен на обработку персональных данных
-                  <span class="question__checkbox"></span>
+                  <span class="checkbox__icon question__checkbox-icon"></span>
                 </label>
               </p>
             </div>
@@ -394,5 +394,35 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__body">
+        <h3 class="modal__title">
+          Закажите звонок
+        </h3>
+        <p class="modal__subtitle">
+          Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+        </p>
+        <form clas="modal__form" method="post" action="#">
+          <div class="modal__group">
+            <input class="field modal__field" type="text" placeholder="Имя" />
+            <input class="field modal__field" type="text" placeholder="Телефон" />
+          </div>
+          <div class="modal__group">
+            <textarea class="field modal__textarea" placeholder="Ваш вопрос" rows="8"></textarea>
+          </div>
+          <div class="modal__group modal__group--submit">
+            <input class="modal__button" type="submit" value="Отправить" />
+            <p class="modal__consent">
+              <label class="checkbox modal__checkbox">
+                <input class="checkbox__input" type="checkbox" checked />
+                Я согласен на обработку персональных данных
+                <span class="checkbox__icon modal__checkbox-icon"></span>
+              </label>
+            </p>
+          </div>
+        </form>
+        <button class="modal__close" type="button">Закрыть</button>
+      </div>
+    </div>
   </body>
 </html>

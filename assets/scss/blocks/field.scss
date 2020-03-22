@@ -1,0 +1,13 @@
+.field {
+  font-family: "PT Mono";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #ffffff;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}

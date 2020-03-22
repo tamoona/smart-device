@@ -1,0 +1,131 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal__body {
+  position: fixed;
+  color: #ffffff;
+  background: #00b2ff;
+  z-index: 20;
+  top: 136px;
+  left: 37.2%;
+  max-width: 490px;
+  padding: 33px 40px 15px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0px;
+  width: 21px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.modal__close::before {
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal__title {
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+  margin: 0;
+}
+
+.modal__subtitle {
+  font-weight: normal;
+  margin: 0;
+  margin: 8px 7px 35px 0px;
+}
+
+.modal__group {
+  display: block;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 22px;
+  }
+
+  &:nth-child(2n) {
+    margin-bottom: 22px;
+  }
+}
+
+.modal__field {
+  width: 100%;
+  padding: 11px 14px 17px 24px;
+  margin-bottom: 30.5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.modal__textarea {
+  width: 100%;
+  height: 104px;
+  padding: 11px 14px 14px 24px;
+}
+
+.modal__button {
+  font-family: "Roboto Condensed";
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  background: #00b2ff;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  letter-spacing: 0.05em;
+  margin-right: 33px;
+  padding: 15px;
+}
+
+.modal__consent {
+  color: #ffffff;
+  opacity: 0.8;
+  margin: 0;
+  width: 100%;
+  padding: 34px 9px 0;
+}
+
+.modal__checkbox {
+  padding-left: 38px;
+}
+
+.modal__checkbox-icon {
+  left: -9px;
+}

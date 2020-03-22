@@ -55,21 +55,6 @@
   height: 157px;
 }
 
-.question__field,
-.question__textarea {
-  font-family: "PT Mono";
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: #ffffff;
-
-  &::placeholder {
-    color: #ffffff;
-  }
-}
-
 .question__button {
   font-family: "Roboto Condensed";
   border: 1px solid #ffffff;
@@ -100,40 +85,6 @@
   margin: 0;
   width: 51%;
   padding: 6px 4px;
-}
-
-.question__checkbox-label {
-  display: block;
-  padding-left: 32px;
-  position: relative;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.question__checkbox-input {
-  appearance: none;
-  position: absolute;
-
-  &:checked + .question__checkbox {
-    background-image: url("../img/checkbox-on.svg");
-  }
-
-  &:focus + .question__checkbox {
-    background-image: url("../img/checkbox-off.svg");
-  }
-
-  &:checked:focus + .question__checkbox {
-    background-image: url("../img/checkbox-on.svg");
-  }
-}
-
-.question__checkbox {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  width: 16px;
-  height: 16px;
-  background-image: url("../img/checkbox-off.svg");
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -234,11 +185,11 @@
     width: 100%;
   }
 
-  .question__checkbox-label {
+  .question__checkbox {
     padding-left: 29px;
   }
 
-  .question__checkbox {
+  .question__checkbox-icon {
     left: -4px;
     top: 1px;
   }
