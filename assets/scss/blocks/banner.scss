@@ -23,15 +23,19 @@ $bannerContentOffset: 145px;
 }
 
 .banner__wrapper-image {
-  max-width: 707px;
+  max-width: 47.29%;
   position: absolute;
-  right: -34px;
-  top: -63px;
+  right: -2.27%;
+  top: -16.21%;
 
   img {
     width: 100%;
     object-fit: contain;
   }
+}
+
+.banner__wrapper-content {
+  z-index: 10;
 }
 
 .banner__subtitle {
@@ -112,7 +116,7 @@ $bannerContentOffset: 145px;
   }
 
   .banner__wrapper-image {
-    right: -108px;
+    right: -19px;
     top: -191px;
 
     img {
@@ -134,7 +138,6 @@ $bannerContentOffset: 145px;
     padding-top: 0;
     padding-bottom: 28px;
     padding-left: 15px;
-    z-index: 10;
     position: relative;
   }
 

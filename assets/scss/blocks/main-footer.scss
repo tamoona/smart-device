@@ -141,6 +141,7 @@ $footerMaxWidth: 1415px;
   }
 
   .main-footer__bottom {
+    display: flex;
     border-top: none;
   }
 
@@ -163,11 +164,11 @@ $footerMaxWidth: 1415px;
     border-bottom: 1px solid rgba(27, 45, 55, 0.09);
 
     &--left {
-      display: block;
+      display: flex;
       width: 100%;
-      padding-left: 52px;
-      justify-content: space-between;
-      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       padding-bottom: 48px;
       border-bottom: 1px solid rgba(27, 45, 55, 0.09);
     }
@@ -183,8 +184,14 @@ $footerMaxWidth: 1415px;
 
       &--top {
         margin-left: -8px;
+        text-align: center;
+        padding-left: 10px;
       }
     }
+  }
+
+  .main-footer__social {
+    padding-right: 47px;
   }
 
   .main-footer__logo {
@@ -208,11 +215,11 @@ $footerMaxWidth: 1415px;
   }
 
   .main-footer__agreement {
-    padding-left: 52px;
+    padding-left: 2px;
     padding-bottom: 21px;
   }
 
   .main-footer__developer {
-    padding-left: 64px;
+    padding-left: 18px;
   }
 }

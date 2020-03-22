@@ -73,6 +73,12 @@
   }
 }
 
+.services__link {
+  display: block;
+  width: 100%;
+  height: 100;
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .services {
     padding: 53px 26px 78px;
