@@ -180,26 +180,35 @@
   .question__title {
     font-size: 28px;
     line-height: 140.62%;
+    margin-bottom: 13px;
   }
 
   .question__form {
     max-width: 290px;
-    padding-top: 67px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 36px;
   }
 
   .question__form-group {
     display: block;
+    margin-bottom: 30px;
+
+    &--submit {
+      margin-top: -6px;
+    }
   }
 
   .question__subtitle {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .question__field {
     width: 100%;
     margin-bottom: 30px;
     margin-right: 0;
+    padding-bottom: 18px;
+    padding-top: 12px;
+    padding-left: 16px;
 
     &:last-child {
       margin-bottom: 0;
@@ -208,19 +217,29 @@
 
   .question__button {
     width: 100%;
-    margin: 0;
     padding: 14px;
     font-size: 14px;
     line-height: 16px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin: 0 0 25px;
   }
 
   .question__textarea {
     height: 104px;
+    padding-top: 12px;
+    padding-left: 16px;
   }
 
   .question__consent {
     width: 100%;
+  }
+
+  .question__checkbox-label {
+    padding-left: 29px;
+  }
+
+  .question__checkbox {
+    left: -4px;
+    top: 1px;
   }
 }

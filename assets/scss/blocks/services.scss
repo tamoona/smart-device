@@ -117,8 +117,12 @@
 
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .services {
-    padding-top: 53px;
-    padding-bottom: 64px;
+    padding-top: 50px;
+    padding-bottom: 34px;
+  }
+
+  .services__list {
+    display: block;
   }
 
   .services__item {
@@ -131,5 +135,20 @@
   .services__title {
     font-size: 28px;
     line-height: 140.62%;
+    padding-left: 11px;
+    padding-bottom: 42px;
+  }
+
+  .services__subtitle {
+    padding: 20px 86px 0 36px;
+  }
+
+  .services__button-more {
+    bottom: 0px;
+    right: 1px;
+    svg {
+      right: 29px;
+      top: 27px;
+    }
   }
 }

@@ -71,22 +71,25 @@
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .about {
     background-image: none;
-    padding: 0 0 69px 0;
+    padding: 0 0 77px 0;
   }
 
   .about__title {
     font-size: 28px;
     line-height: 140.62%;
+    margin-top: 27px;
   }
 
   .about__text {
-    margin-bottom: 50px;
+    margin-bottom: 41px;
+    margin-top: 0;
   }
 
   .about__content {
-    height: 377px;
+    height: 351px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 37px;
 
     &::after {
       content: "...";

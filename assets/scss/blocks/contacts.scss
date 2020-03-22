@@ -56,6 +56,8 @@
 
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .contacts__item {
+    margin-left: -8px;
+
     span {
       display: none;
     }
@@ -64,9 +66,18 @@
       display: none;
     }
 
-    svg {
-      width: 25.33px;
-      height: 18.67px;
+    &--mail {
+      svg {
+        width: 25.33px;
+        height: 18.67px;
+      }
+    }
+
+    &--phone {
+      svg {
+        width: 25.33px;
+        height: 24.67px;
+      }
     }
   }
 }

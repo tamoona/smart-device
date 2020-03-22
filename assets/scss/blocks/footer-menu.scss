@@ -50,5 +50,18 @@
   .footer-menu__list {
     font-size: 15px;
     line-height: 25px;
+    padding: 5px 0 25px 0;
+
+    &:first-child {
+      padding-bottom: 0;
+    }
+
+    &:last-child {
+      padding-top: 0;
+    }
+  }
+
+  .footer-menu__title {
+    padding: 28px 0;
   }
 }
