@@ -37,11 +37,22 @@ function onPopupClose() {
   document.querySelector(".modal").classList.remove("modal--opened");
 }
 
+function onPhoneInput(e) {
+  var match = e.target.value.replace(/\D/g, "").match(/(?:7)(\d{0,3})(\d{0,7})/);
+  var result = !match[2] ? match[1] : match[1] + ") " + match[2] + (match[3] ? match[3] : "");
+  e.target.value = "+7 (" + result;
+}
+
+function onPhoneFocus(e) {
+  e.target.value = e.target.value || "+7 (";
+}
+
 window.onload = function() {
   var switches = document.querySelectorAll(".footer-menu__switch");
   var modalOpenButton = document.querySelector(".contacts__button");
   var modalCloseButton = document.querySelector(".modal__close");
   var links = document.querySelectorAll("a[href^='#']");
+  var phoneInputs = document.querySelectorAll(".field--phone");
 
   switches.forEach(function(switchButton) {
     switchButton.addEventListener("click", onToggleMenu);
@@ -49,6 +60,11 @@ window.onload = function() {
 
   links.forEach(function(link) {
     link.addEventListener("click", onLinkClick);
+  });
+
+  phoneInputs.forEach(function(phoneInput) {
+    phoneInput.addEventListener("input", onPhoneInput);
+    phoneInput.addEventListener("focus", onPhoneFocus);
   });
 
   modalOpenButton.addEventListener("click", onPopupOpen);
