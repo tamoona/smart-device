@@ -70,11 +70,9 @@
         </div>
         <div class="banner__wrapper-image">
           <picture>
-            <source srcset="./assets/img/banner-image-tablet@2x.png" media="(min-width: 768px) and (max-width: 1023px)" />
-            <source srcset="./assets/img/banner-image-tablet@1x.png" media="(min-width: 768px) and (max-width: 1023px)" />
-            <source srcset="./assets/img/banner-image-mobile@1x.png" media="(min-width: 320px)and (max-width: 767px)" />
-            <source srcset="./assets/img/banner-image-mobile@2x.png" media="(min-width: 320px)and (max-width: 767px)" />
-            <img alt="Изображение механических плат" src="./assets/img/banner-image@1x.png" width="707" height="519" />
+            <source srcset="./assets/img/banner-image-tablet@1x.png 1x, ./assets/img/banner-image-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1023px)" />
+            <source srcset="./assets/img/banner-image-mobile@1x.png 1x, ./assets/img/banner-image-mobile@2x.png 2x" media="(min-width: 320px)and (max-width: 767px)" />
+            <img alt="Изображение механических плат" srcset="./assets/img/banner-image@1x.png 1x, ./assets/img/banner-image@2x.png 2x" src="./assets/img/banner-image@1x.png" width="707" height="519" />
           </picture>
         </div>
       </section>

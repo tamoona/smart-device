@@ -4,6 +4,10 @@
   background-image: url("../img/paper-airplane@1x.png"), url("../img/form-background@1x.png");
   background-repeat: no-repeat;
   background-position: 14% -1%, 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper-airplane@2x.png"), url("../img/form-background@2x.png");
+  }
 }
 
 .question__container {
