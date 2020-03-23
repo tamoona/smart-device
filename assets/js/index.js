@@ -32,7 +32,9 @@ function onToggleMenu(event) {
 }
 
 function onModalOpen() {
-  document.querySelector(".modal").classList.add("modal--opened");
+  var modal = document.querySelector(".modal");
+  modal.classList.add("modal--opened");
+  modal.querySelector("input[name='name']").focus();
 }
 
 function onModalClose() {
