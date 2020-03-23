@@ -57,13 +57,14 @@
 
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .contacts__item {
-    margin-left: -8px;
+    margin-left: -9px;
 
     span {
       display: none;
     }
 
     &--mail {
+      margin-right: 33px;
       svg {
         width: 25.33px;
         height: 18.67px;
@@ -71,6 +72,7 @@
     }
 
     &--phone {
+      margin-right: 47px;
       svg {
         width: 25.33px;
         height: 24.67px;
