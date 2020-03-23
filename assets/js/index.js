@@ -1,3 +1,5 @@
+var ESC_KEY_NUMBER = 27;
+
 function findAncestor(el, sel) {
   while ((el = el.parentElement) && !(el.matches || el.matchesSelector).call(el, sel));
   return el;
@@ -29,11 +31,11 @@ function onToggleMenu(event) {
   menu.classList.toggle("footer-menu--opened");
 }
 
-function onPopupOpen() {
+function onModalOpen() {
   document.querySelector(".modal").classList.add("modal--opened");
 }
 
-function onPopupClose() {
+function onModalClose() {
   document.querySelector(".modal").classList.remove("modal--opened");
 }
 
@@ -47,10 +49,23 @@ function onPhoneFocus(e) {
   e.target.value = e.target.value || "+7 (";
 }
 
+function onModalKeydown(e) {
+  if (e.keyCode === ESC_KEY_NUMBER) {
+    onModalClose();
+  }
+}
+
+function onModalBackdropClick(e) {
+  if (e.target.classList.contains("modal")) {
+    onModalClose();
+  }
+}
+
 window.onload = function() {
   var switches = document.querySelectorAll(".footer-menu__switch");
   var modalOpenButton = document.querySelector(".contacts__button");
   var modalCloseButton = document.querySelector(".modal__close");
+  var modal = document.querySelector(".modal");
   var links = document.querySelectorAll("a[href^='#']");
   var phoneInputs = document.querySelectorAll(".field--phone");
 
@@ -67,6 +82,8 @@ window.onload = function() {
     phoneInput.addEventListener("focus", onPhoneFocus);
   });
 
-  modalOpenButton.addEventListener("click", onPopupOpen);
-  modalCloseButton.addEventListener("click", onPopupClose);
+  window.addEventListener("keydown", onModalKeydown);
+  modalOpenButton.addEventListener("click", onModalOpen);
+  modalCloseButton.addEventListener("click", onModalClose);
+  modal.addEventListener("click", onModalBackdropClick);
 };
