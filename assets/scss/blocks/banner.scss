@@ -60,9 +60,11 @@ $bannerContentOffset: 145px;
 }
 
 .banner__button {
+  display: block;
   font-family: "Roboto Condensed";
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-align: center;
   color: #ffffff;
   background: #00b2ff;
   border-radius: 5px;
