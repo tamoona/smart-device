@@ -18,6 +18,10 @@
   transform: rotate(-90deg);
   left: 11.2%;
   bottom: 128px;
+
+  &:hover {
+    color: darken($color: #ffffff, $amount: 65%);
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {

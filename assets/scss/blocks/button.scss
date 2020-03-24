@@ -1,0 +1,36 @@
+.button {
+  display: block;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &--filled {
+    background: #00b2ff;
+
+    &:hover {
+      background: lighten($color: #00b2ff, $amount: 10%);
+    }
+  }
+
+  &--bordered {
+    border: 1px solid #ffffff;
+
+    &:hover {
+      border: 1px solid darken($color: #ffffff, $amount: 15%);
+    }
+  }
+}

@@ -14,6 +14,11 @@ body {
 
 a {
   text-decoration: none;
+  transition: ease-in 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 img {

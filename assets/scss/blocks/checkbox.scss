@@ -4,6 +4,7 @@
   position: relative;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .checkbox__input {
@@ -30,4 +31,8 @@
   width: 16px;
   height: 16px;
   background-image: url("../img/checkbox-off.svg");
+
+  &:hover {
+    opacity: 0.8;
+  }
 }

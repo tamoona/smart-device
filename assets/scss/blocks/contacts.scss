@@ -13,19 +13,11 @@
 }
 
 .contacts__button {
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 5px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  background-color: transparent;
-  color: #ffffff;
-  letter-spacing: 0.05em;
   padding: 13px 27px;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
