@@ -8,8 +8,10 @@
 }
 
 .checkbox__input {
-  appearance: none;
   position: absolute;
+  left: 2px;
+  top: 4px;
+  opacity: 0;
 
   &:checked + .checkbox__icon {
     background-image: url("../img/checkbox-on.svg");
