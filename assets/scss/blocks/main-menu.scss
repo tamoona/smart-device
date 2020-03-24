@@ -3,7 +3,7 @@
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  max-width: 1411px;
+  max-width: 1455px;
   margin: 0 auto;
   padding-top: 33px;
   align-items: center;
@@ -11,6 +11,8 @@
   margin-bottom: 231px;
   position: relative;
   z-index: 10;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .main-menu__contacts {
@@ -24,31 +26,20 @@
   }
 }
 
-@media (max-width: $desktop) {
-  .main-menu {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-}
-
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .main-menu {
-    max-width: 720px;
+    max-width: 744px;
     padding-top: 20px;
     margin: 0 auto 118px;
+    padding-left: 11px;
+    padding-right: 11px;
   }
 }
 
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .main-menu {
     padding-top: 17px;
-  }
-
-  .main-menu__contacts {
-    width: 25%;
-  }
-
-  .main-menu__logo {
     padding-left: 17px;
+    padding-right: 17px;
   }
 }
