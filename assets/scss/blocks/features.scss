@@ -78,26 +78,21 @@
 
   .features__item {
     min-height: 232px;
+  }
 
-    .features__content {
-      background-color: #ffffff;
-    }
-
-    .features__title {
-      color: #00b2ff;
-    }
-
-    .features__subtitle {
-      color: #666666;
-    }
+  .features__title {
+    color: #00b2ff;
+    padding-top: 2px;
   }
 
   .features__content {
     padding: 25px 18px 17px 27px;
+    background-color: #ffffff;
   }
 
   .features__subtitle {
     padding-top: 7px;
+    color: #666666;
   }
 }
 
@@ -124,6 +119,7 @@
       }
     }
   }
+
   .features__content {
     padding: 24px 15px 25px 25px;
   }
