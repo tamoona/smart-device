@@ -75,6 +75,18 @@ $footerMaxWidth: 1415px;
   padding-left: 9px;
 }
 
+@media (max-width: $desktop) {
+  .main-footer__content,
+  .main-footer__bottom-wrapper {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .main-footer__developer {
+    width: 21.3%;
+  }
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .main-footer__column {
     padding-left: 25px;
