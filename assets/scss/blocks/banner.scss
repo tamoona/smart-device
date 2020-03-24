@@ -1,7 +1,7 @@
 $bannerContentOffset: 145px;
 
 .banner__title {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 80px;
@@ -40,7 +40,7 @@ $bannerContentOffset: 145px;
 
 .banner__subtitle {
   width: 71%;
-  font-family: "PT Mono";
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 22px;
   line-height: 34px;
   color: #ffffff;
@@ -61,7 +61,7 @@ $bannerContentOffset: 145px;
 
 .banner__button {
   display: block;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   text-align: center;
