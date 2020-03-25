@@ -1,3 +1,5 @@
+"use strict";
+
 var ESC_KEY_NUMBER = 27;
 
 function findAncestor(el, sel) {
@@ -5,11 +7,11 @@ function findAncestor(el, sel) {
   return el;
 }
 
-function onLinkClick(event, target) {
+function onLinkClick(e, target) {
+  e.preventDefault();
   var distanceToTop = function(el) {
     return Math.floor(el.getBoundingClientRect().top);
   };
-  event.preventDefault();
   var targetID = target ? target.getAttribute("href") : this.getAttribute("href");
   var targetAnchor = document.querySelector(targetID);
   if (!targetAnchor) return;
@@ -17,6 +19,7 @@ function onLinkClick(event, target) {
   window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
   var checkIfDone = setInterval(function() {
     var atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+
     if (distanceToTop(targetAnchor) === 0 || atBottom) {
       window.history.pushState("", "", targetID);
       clearInterval(checkIfDone);
@@ -50,12 +53,14 @@ function onPhoneFocus(e) {
 }
 
 function onModalKeydown(e) {
+  e.preventDefault();
   if (e.keyCode === ESC_KEY_NUMBER) {
     onModalClose();
   }
 }
 
 function onModalBackdropClick(e) {
+  e.preventDefault();
   if (e.target.classList.contains("modal")) {
     onModalClose();
   }
@@ -70,11 +75,13 @@ window.onload = function() {
   var phoneInputs = document.querySelectorAll(".field--phone");
 
   switches.forEach(function(switchButton) {
+    console.log(switchButton);
     switchButton.addEventListener("click", onToggleMenu);
   });
 
   links.forEach(function(link) {
     link.addEventListener("click", onLinkClick);
+    link.onclick = onLinkClick;
   });
 
   phoneInputs.forEach(function(phoneInput) {
