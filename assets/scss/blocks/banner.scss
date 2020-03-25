@@ -117,6 +117,8 @@ $bannerContentOffset: 145px;
     img {
       width: 541.8px;
       height: 467.5px;
+      object-fit: contain;
+      object-position: top right;
     }
   }
 }
