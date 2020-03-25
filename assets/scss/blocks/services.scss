@@ -1,7 +1,7 @@
 .services {
   background: #1b2d37;
   padding-top: 90px;
-  padding-bottom: 128px;
+  padding-bottom: 98px;
 }
 
 .services__list {
@@ -37,6 +37,7 @@
   width: 33.3%;
   padding: 0 15px;
   display: flex;
+  margin-bottom: 30px;
 
   &:nth-child(3n + 1) {
     padding-left: 0;
