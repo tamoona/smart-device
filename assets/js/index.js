@@ -32,14 +32,20 @@ function onToggleMenu(event) {
   menu.classList.toggle("footer-menu--opened");
 }
 
+function toggleBodyScroll() {
+  document.querySelector("body").classList.toggle("no-scroll");
+}
+
 function onModalOpen() {
   var modal = document.querySelector(".modal");
   modal.classList.add("modal--opened");
   modal.querySelector("input[name='name']").focus();
+  toggleBodyScroll();
 }
 
 function onModalClose() {
   document.querySelector(".modal").classList.remove("modal--opened");
+  toggleBodyScroll();
 }
 
 function onPhoneInput(e) {

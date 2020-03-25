@@ -64,6 +64,7 @@
   width: 50%;
   margin-right: 33px;
   padding: 14px;
+  padding-left: 20px;
 
   &:last-child {
     margin-right: 0;
@@ -72,8 +73,10 @@
 
 .question__textarea {
   padding: 14px;
+  padding-left: 19px;
   width: 100%;
   height: 157px;
+  resize: none;
 }
 
 .question__button {

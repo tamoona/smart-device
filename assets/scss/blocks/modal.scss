@@ -7,19 +7,20 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
+  justify-content: center;
+  align-items: flex-start;
 
   &--opened {
-    display: block;
+    display: flex;
   }
 }
 
 .modal__body {
-  position: fixed;
   color: #ffffff;
   background: #00b2ff;
   z-index: 20;
-  top: 15.49%;
-  left: 37.2%;
+  position: relative;
+  top: 10.18%;
   max-width: 490px;
   padding: 33px 40px 15px;
 }
@@ -97,6 +98,7 @@
   width: 100%;
   height: 104px;
   padding: 11px 14px 14px 24px;
+  resize: none;
 }
 
 .modal__button {
