@@ -5,6 +5,22 @@ if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
 
+if (!HTMLFormElement.prototype.reportValidity) {
+  HTMLFormElement.prototype.reportValidity = function() {
+    var validity = this.checkValidity();
+    if (!validity) {
+      var submitButtons = this.querySelectorAll("button, input[type=submit]");
+      for (var i = 0; i < submitButtons.length; i++) {
+        if (submitButtons[i].type === "submit") {
+          submitButtons[i].click();
+          return validity;
+        }
+      }
+    }
+    return validity;
+  };
+}
+
 // smooth scroll polyfill
 function polyfill() {
   // aliases
