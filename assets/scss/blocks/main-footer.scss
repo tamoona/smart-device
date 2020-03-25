@@ -5,7 +5,9 @@ $footerMaxWidth: 1459px;
 }
 
 .main-footer__bottom a,
-.main-footer__developer {
+.main-footer__developer,
+.main-footer__company,
+.main-footer__copyright {
   color: rgba(27, 45, 55, 0.5);
   text-transform: uppercase;
   font-size: 13px;
