@@ -612,7 +612,9 @@ ul {
   background-size: 18%;
   padding-bottom: 121px;
   padding-left: 209px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  margin: 0 auto;
+  max-width: 1224px; }
 
 .about__content {
   margin-bottom: 49px; }
@@ -634,32 +636,41 @@ ul {
 .about__text {
   margin-bottom: 21px; }
 
+.about__show {
+  display: none; }
+
 @media (min-width: 767px) and (max-width: 1023px) {
   .about {
     background-size: 34%;
     padding-right: 0;
     padding-bottom: 94px;
     background-position-x: -30px;
-    padding-left: 188px; }
+    padding-left: 188px;
+    max-width: 722px; }
   .about__content {
-    height: 212px;
-    overflow: hidden;
     position: relative;
-    margin-bottom: 55px; }
-    .about__content::after {
-      content: "...";
-      position: absolute;
-      right: -7px;
-      bottom: 4px; }
+    margin-bottom: 52px; }
   .about__title {
     font-size: 32px;
     line-height: 140.62%;
-    margin-bottom: 7px; } }
+    margin-bottom: 25px; }
+  .about__hidden {
+    display: none; }
+  .about__show {
+    display: inline-block;
+    margin-left: -4px; } }
 
 @media (min-width: 0) and (max-width: 767px) {
   .about {
     background-image: none;
-    padding: 0 0 77px 0; }
+    padding: 0 0 77px 0;
+    max-width: 100%;
+    margin: 0 15px; }
+  .about__hidden {
+    display: none; }
+  .about__show {
+    display: inline-block;
+    margin-left: -7px; }
   .about__title {
     font-size: 28px;
     line-height: 140.62%;
@@ -669,14 +680,8 @@ ul {
     margin-top: 0; }
   .about__content {
     height: 351px;
-    overflow: hidden;
     position: relative;
-    margin-bottom: 37px; }
-    .about__content::after {
-      content: "...";
-      position: absolute;
-      right: 60px;
-      bottom: 3px; } }
+    margin-bottom: 37px; } }
 
 .banner__title {
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
@@ -1503,7 +1508,8 @@ ul {
     display: block; }
   .services__item {
     width: 100%;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 0; }
   .services__link {
     padding: 41px 44px 53px 44px;
     min-height: 256px; }
