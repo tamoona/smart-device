@@ -218,33 +218,41 @@
         </div>
       </section>
       <section class="question" id="question">
-        <div class="question__container container">
-          <h2 class="visually-hidden">Форма для связи</h2>
-          <form class="question__form" method="post" action="/contact">
-            <h3 class="question__title">
-              Остались вопросы? Задайте их нам!
-            </h3>
-            <p class="question__subtitle">
-              Мы проконсультируем Вас бесплатно
-            </p>
-            <div class="question__form-group">
-              <input class="field question__field" name="name" type="text" placeholder="Имя" required />
-              <input class="field field--phone question__field" name="phone" type="text" placeholder="Телефон" required />
-            </div>
-            <div class="question__form-group">
-              <textarea class="field question__textarea" placeholder="Ваш вопрос" rows="8" required></textarea>
-            </div>
-            <div class="question__form-group question__form-group--submit">
-              <input class="button button--bordered question__button" type="submit" value="Задать вопрос" />
-              <p class="question__consent">
-                <label class="checkbox question__checkbox">
-                  <input class="checkbox__input" name="consent" type="checkbox" checked required />
-                  Я согласен на обработку персональных данных
-                  <span class="checkbox__icon question__checkbox-icon"></span>
-                </label>
+        <div class="question__wrapper">
+          <div class="question__image">
+            <picture>
+              <source srcset="./assets/img/paper-airplane@1x.png 1x, ./assets/img/paper-airplane@2x.png 2x" media="(min-width: 768px) and (max-width: 1023px)" />
+              <img alt="Изображение бумажного самолётика" srcset="./assets/img/paper-airplane@1x.png 1x, ./assets/img/paper-airplane@2x.png 2x" width="665" height="487" />
+            </picture>
+          </div>
+          <div class="question__content">
+            <h2 class="visually-hidden">Форма для связи</h2>
+            <form class="question__form" method="post" action="/contact">
+              <h3 class="question__title">
+                Остались вопросы? Задайте их нам!
+              </h3>
+              <p class="question__subtitle">
+                Мы проконсультируем Вас бесплатно
               </p>
-            </div>
-          </form>
+              <div class="question__form-group">
+                <input class="field question__field" name="name" type="text" placeholder="Имя" required />
+                <input class="field field--phone question__field" name="phone" type="text" placeholder="Телефон" required />
+              </div>
+              <div class="question__form-group">
+                <textarea class="field question__textarea" placeholder="Ваш вопрос" rows="8" required></textarea>
+              </div>
+              <div class="question__form-group question__form-group--submit">
+                <input class="button button--bordered question__button" type="submit" value="Задать вопрос" />
+                <p class="question__consent">
+                  <label class="checkbox question__checkbox">
+                    <input class="checkbox__input" name="consent" type="checkbox" checked required />
+                    Я согласен на обработку персональных данных
+                    <span class="checkbox__icon question__checkbox-icon"></span>
+                  </label>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
