@@ -55,9 +55,17 @@ var onFormSubmit = function(e) {
   }
 };
 
+var closeAccordeon = function() {
+  var openTabs = document.querySelectorAll(".footer-menu--opened");
+  openTabs.forEach(function(openTab) {
+    openTab.classList.remove("footer-menu--opened");
+  });
+};
+
 var onToggleMenu = function(e) {
   var menu = findAncestor(e.target, ".footer-menu");
-  menu.classList.toggle("footer-menu--opened");
+  closeAccordeon();
+  menu.classList.add("footer-menu--opened");
 };
 
 var toggleBodyScroll = function() {
