@@ -7,7 +7,7 @@
 }
 
 .about {
-  background-image: url("../img/2005@1x.png");
+  background-image: url("../img/2005@1x.webp");
   background-repeat: no-repeat;
   background-size: 18%;
   padding-bottom: 121px;
@@ -15,6 +15,10 @@
   padding-right: 30px;
   margin: 0 auto;
   max-width: 1224px;
+
+  .no-webp & {
+    background-image: url("../img/2005@1x.png");
+  }
 }
 
 .about__content {

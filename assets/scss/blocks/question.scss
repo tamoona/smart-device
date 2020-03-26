@@ -1,14 +1,22 @@
 .question {
   background: #00b2ff;
   color: #ffffff;
-  background-image: url("../img/form-background@1x.png");
+  background-image: url("../img/form-background@1x.webp");
   background-repeat: no-repeat;
   background-position: 100%;
   position: relative;
   background-size: 100%;
 
+  .no-webp & {
+    background-image: url("../img/form-background@1x.png");
+  }
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/form-background@2x.png");
+    background-image: url("../img/form-background@2x.webp");
+
+    .no-webp & {
+      background-image: url("../img/form-background@2x.png");
+    }
   }
 }
 

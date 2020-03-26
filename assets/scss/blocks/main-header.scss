@@ -1,12 +1,16 @@
 .main-header {
   background-color: #1b2d37;
-  background-image: url("../img/banner-bg@1x.png");
+  background-image: url("../img/banner-bg@1x.webp");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 878px;
   overflow: hidden;
   position: relative;
+
+  .no-webp & {
+    background-image: url("../img/banner-bg@1x.png");
+  }
 }
 
 .main-header__scroll {

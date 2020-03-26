@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Device</title>
     <meta name="Description" content="Smart Device - производство и монтаж, поставка комплектующих, блоков и модулей." />
+    <link rel="preload" href="assets/fonts/PTMono-Regular.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/RobotoCondensed-Bold.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/RobotoCondensed-Regular.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/Roboto-Medium.woff" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="assets/fonts/Roboto-Medium.woff2" as="font" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
   <body>
@@ -71,6 +79,9 @@
         </div>
         <div class="banner__wrapper-image">
           <picture>
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/img/banner-image-tablet@1x.webp 1x, ./assets/img/banner-image-tablet@2x.webp 2x" />
+            <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="./assets/img/banner-image-mobile@1x.webp 1x, ./assets/img/banner-image-mobile@2x.webp 2x" />
+            <source type="image/webp" srcset="./assets/img/banner-image@1x.webp 1x, ./assets/img/banner-image@2x.webp 2x" />
             <source srcset="./assets/img/banner-image-tablet@1x.png 1x, ./assets/img/banner-image-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1023px)" />
             <source srcset="./assets/img/banner-image-mobile@1x.png 1x, ./assets/img/banner-image-mobile@2x.png 2x" media="(min-width: 320px)and (max-width: 767px)" />
             <img alt="Изображение механических плат" srcset="./assets/img/banner-image@1x.png 1x, ./assets/img/banner-image@2x.png 2x" src="./assets/img/banner-image@1x.png" width="707" height="519" />
@@ -224,6 +235,9 @@
         <div class="question__wrapper">
           <div class="question__image">
             <picture>
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/img/paper-airplane@1x.webp 1x, ./assets/img/paper-airplane@2x.webp 2x" />
+              <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="./assets/img/paper-airplane@1x.webp 1x, ./assets/img/paper-airplane@2x.webp 2x" />
+              <source type="image/webp" srcset="./assets/img/paper-airplane@1x.webp 1x, ./assets/img/paper-airplane@2x.webp 2x" />
               <source srcset="./assets/img/paper-airplane@1x.png 1x, ./assets/img/paper-airplane@2x.png 2x" media="(min-width: 768px) and (max-width: 1023px)" />
               <img alt="Изображение бумажного самолётика" srcset="./assets/img/paper-airplane@1x.png 1x, ./assets/img/paper-airplane@2x.png 2x" src="./assets/img/paper-airplane@1x.png" width="665" height="487" />
             </picture>
@@ -451,7 +465,6 @@
         <button class="modal__close" type="button">Закрыть</button>
       </div>
     </div>
-    <script src="assets/js/polyfills.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/main.min.js"></script>
   </body>
 </html>
