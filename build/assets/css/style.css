@@ -674,6 +674,8 @@ ul {
     padding: 0 0 77px 0;
     max-width: 100%;
     margin: 0 15px; }
+    .no-webp .about {
+      background-image: none; }
   .about__hidden {
     display: none; }
   .about__show {
